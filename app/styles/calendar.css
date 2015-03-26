@@ -1,0 +1,88 @@
+.cei-calendar {
+  display: none;
+  left: 0;
+  margin-top: -150px;
+  position: absolute;
+  top: 50%;
+  transition: all .5s linear;
+  vertical-align: middle;
+  width: 100%;
+  z-index: 999;
+}
+
+.cei-calendar > .bg {
+  background-color: rgba(200, 200, 200, .9);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.cei-calendar table {
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-color: #dddddd #eeeeee;
+  border-style: solid;
+  border-width: 1px 0 2px;
+  box-shadow: .5px 2px 5px rgba(200, 200, 200, .5);
+  margin: 0 auto;
+  max-width: 400px;
+  table-layout: fixed;
+  width: 80%;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.cei-calendar caption {
+  color: #000000;
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+}
+
+.cei-calendar thead {
+  border-bottom: 1px solid #dddddd;
+}
+
+.cei-calendar th {
+  color: #aaaaaa;
+  font-size: .7em;
+  height: 25px
+}
+
+.cei-calendar td {
+  color: #999999;
+  font-size: 1em;
+  height: 32px;
+  transition: color .1s ease-in-out;
+}
+
+.cei-calendar th,
+.cei-calendar td {
+  font-weight: 700;
+  text-align: center;
+}
+.cei-calendar tr :first-child {
+  color: #ff3300;
+}
+.cei-calendar tr :last-child {
+  color: #336699;
+}
+.cei-calendar td.outmonth {
+  color: #dddddd;
+}
+.cei-calendar td:hover {
+  background-color: #eeeeee;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+@media screen and (min-width: 768px) {
+
+}
+

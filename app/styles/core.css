@@ -1,0 +1,236 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,700);
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 300;
+  src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot);
+  src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+  url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff2) format('woff2'),
+  url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff) format('woff'),
+  url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.eot);
+  src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),
+  url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.woff2) format('woff2'),
+  url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.woff) format('woff'),
+  url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.ttf) format('truetype');
+}
+
+body {
+  font-family: "Open Sans", "Nanum Gothic", sans-serif;
+  font-weight: 300;
+}
+
+*:focus {
+  outline: none!important;
+  -webkit-box-shadow: none!important;
+}
+
+/** iOS button **/
+.ios-btn {
+  color: #777;
+  display: table!important;
+  padding: 4px 7px;
+  white-space: nowrap;
+}
+.ios-btn > i {
+  display: table-cell!important;
+  font-size: 2em!important;
+}
+.ios-btn > span {
+  display: table-cell!important;
+  font-size: 1.3em!important;
+  text-indent: 7px;
+  vertical-align: middle;
+}
+.ios-btn:active,
+.ios-btn:focus,
+.ios-btn:hover {
+  color: #000000;
+  text-decoration: none;
+  text-shadow: 1px 1px rgba(200, 200, 200, .5);
+}
+
+
+.header {
+  background-color: rgba(255, 255, 255, .8);
+  border-bottom: 1px solid #EEE;
+  display: table;
+  height: 50px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+.header > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+.header > div.title-case {
+  width: 100%;
+}
+#title {
+  font-size: 1.4em;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.menu {
+  background-color: rgba(245, 245, 245, .9);
+  border-left: 1px solid rgba(220, 220, 220, .7);
+  height: 100%;
+  overflow: auto;
+  padding-bottom: 100px;
+  position: fixed;
+  right: -300px;
+  top : 49px;
+  transition: right .5s cubic-bezier(.5, 0, .5, 1);
+  z-index: 100;
+}
+.menu.show {
+  right: 0;
+}
+.menu ul,
+.menu ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu h3 {
+  border: 0;
+  color: #AAA;
+  font-size: 11px;
+  margin: 0;
+  padding: 7px 5px 2px;
+}
+.menu-group li {
+  background-color: #FFF;
+  border-top: 1px solid #EEE;
+  color: #777;
+  font-weight: 700;
+}
+.menu-group li:last-child {
+  border-bottom: 1px solid #EEE;
+}
+
+.menu-group li > a {
+  color: #777777;
+  display: table;
+  font-size: 1.3em;
+  font-weight: 700;
+  padding: 4px 5px 4px 0;
+  text-decoration: none;
+}
+.menu-group li > a:active,
+.menu-group li > a:focus,
+.menu-group li > a:hover {
+  color: #000000;
+}
+.menu-group li > a:not([href]) {
+  color: #aaaaaa;
+  cursor: default;
+}
+.menu-group li > a > i {
+  display: table-cell;
+  font-size: 1.5em;
+  text-align: center;
+  vertical-align: middle;
+  width: 40px
+}
+.menu-group li > a > i.r90 {
+  transform: rotate(90deg);
+}
+.menu-group li > a > span {
+  display: table-cell;
+  max-width: 270px;
+  overflow: hidden;
+  padding-right: 20px;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.menu-group li > a:not([href]) > span::after {
+  content: "\f3d0";
+  font-family: "Ionicons";
+  position: absolute;
+  right: 7px;
+}
+
+
+.user-info {
+  height: 90px;
+  margin-top: 10px;
+  text-align: center;
+}
+.user-info > .anonymous {
+  font-size: 80px;
+  line-height: 90px;
+}
+.user-info > .photo {
+  border: 0;
+  border-radius: 40px;
+  display: block;
+  height: 80px;
+  margin: -90px auto 0;
+  text-align:center;
+  width: 80px;
+}
+.user-info > img:not([src]) {
+  display: none;
+}
+
+
+.main-frame {
+  height: 100%;
+  overflow: hidden;
+  padding-top: 50px;
+  position: absolute;
+  width: 100%;
+}
+
+.main-frame > .stage {
+  height: 100%;
+  overflow: auto;
+  position: relative;
+}
+
+.main-frame > .stop-stage {
+  background-color: rgba(0, 0, 0, .2);
+  display: none;
+  height: 100%;
+  overflow: hidden;
+  left: 0;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+}
+
+
+h1.title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 50px;
+  margin: 0;
+  overflow: hidden;
+  position: fixed;
+  text-align: center;
+  text-overflow: ellipsis;
+  top: 0;
+  left: 20%;
+  white-space: nowrap;
+  width: 60%;
+  z-index: 100;
+}
+
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}

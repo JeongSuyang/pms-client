@@ -1,0 +1,156 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+    <title>Welcome!</title>
+    <style>
+      @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,700);
+
+      @font-face { font-family: "Ionicons";
+        src: url(http://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.eot);
+        src: url(http://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.eot#iefix) format("embedded-opentype"),
+             url(http://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.ttf) format("truetype"),
+             url(http://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.woff) format("woff"),
+             url(http://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.svg#Ionicons) format("svg"); font-weight: normal; font-style: normal; }
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+      body {
+        background: #82b9f0;
+        background: -moz-linear-gradient(-45deg, #82b9f0 0%, #6095cb 43%, #4b7fb3 70%, #336699 100%);
+        background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #82b9f0), color-stop(43%, #6095cb), color-stop(70%, #4b7fb3), color-stop(100%, #336699));
+        background: -webkit-linear-gradient(-45deg, #82b9f0 0%, #6095cb 43%, #4b7fb3 70%, #336699 100%);
+        background: -o-linear-gradient(-45deg, #82b9f0 0%, #6095cb 43%, #4b7fb3 70%, #336699 100%);
+        background: -ms-linear-gradient(-45deg, #82b9f0 0%, #6095cb 43%, #4b7fb3 70%, #336699 100%);
+        background: linear-gradient(135deg, #82b9f0 0%, #6095cb 43%, #4b7fb3 70%, #336699 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#82b9f0', endColorstr='#336699', GradientType=1 );
+        position: relative;
+      }
+      .case {
+        position: relative;
+        top: 50%;
+      }
+      .stage {
+        margin-top: -154px;
+      }
+      h1 {
+        margin: 0;
+        max-height: 200px;
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+        text-align: center;
+      }
+      h1 > img {
+        display: inline-block;
+        position: relative;
+        margin-bottom: 30px;
+        top: 50%;
+      }
+      form {
+        margin: 0 auto;
+        overflow: hidden;
+        width: 100%
+      }
+      label {
+        display: block;
+        margin: 0 25px;
+        position: relative;
+      }
+      input,
+      button {
+        border: 0;
+        border-radius: 3px;
+        color: #336699;
+        font-family: "Open Sans";
+        font-size: 20px;
+        height: 40px;
+        margin: 3px 0;
+        outline: none;
+        padding: 0;
+        width: 100%;
+      }
+      input {
+        background: linear-gradient(to bottom, #eeeeee 0%,#ffffff 100%);
+        box-shadow: 0 1px 2px rgba(0,0,0,0.2) inset, 0 -1px 0 rgba(0,0,0,0.05) inset;
+        text-indent: 10px;
+        transition: all 0.4s linear;
+      }
+      input:focus + .bar {
+        width: 100%;
+      }
+      input + .bar {
+        background-color: #336699;
+        bottom: 5px;
+        height: 2px;
+        margin: 0 auto;
+        position: relative;
+        transition: width .3s cubic-bezier(.5,0,.5,1);
+        width: 0;
+      }
+      button {
+        background-color: rgba(33, 66, 99, .4);
+        color: #fff;
+        font-weight: 700;
+        transition: .5s;
+        margin-top: 15px;
+      }
+      button:hover,
+      button:active {
+        box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 -1px 0 rgba(0,0,0,0.05);
+        text-shadow: 0 1px 3px #003366;
+      }
+
+      i {
+        color: #aaaaaa;
+        font-family: "Ionicons";
+        font-size: 20px;
+        font-style: normal;
+        right: 10px;
+        position: absolute;
+        top: 11px;
+      }
+      i.user::before {
+        content: "\f213";
+      }
+      i.lock::before {
+        content: "\f200";
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="case">
+      <div class="stage">
+        <h1><img src="" alt="처음인(주)"></h1>
+        <form action="./">
+          <label>
+            <i class="user"></i>
+            <input name="id" placeholder="id">
+            <div class="bar"></div>
+          </label>
+          <label>
+            <i class="lock"></i>
+            <input name="pin" type="password" placeholder="Password">
+            <div class="bar"></div>
+          </label>
+          <label>
+            <button type="submit">Log in</button>
+          </label>
+        </form>
+      </div>
+    </div>
+    <script title="Google Analystics">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-60605331-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
